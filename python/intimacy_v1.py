@@ -13,4 +13,5 @@ def closeness_score(message):
     return score
 
 msg = input("Enter message: ")
-print("Closeness Score:", closeness_score(msg))
+print(f"Message: {msg}")
+print(f"Closeness Score: {closeness_score(msg)}")
