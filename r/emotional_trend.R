@@ -21,6 +21,7 @@ closeness_score <- function(msg) {
 
 # Compute scores
 scores <- sapply(messages, closeness_score)
+scores <- scores / max(scores)
 
 # Print results
 print(data.frame(messages, scores))
