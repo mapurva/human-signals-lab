@@ -2,7 +2,7 @@ def closeness_score(message):
     words = message.lower().split()
     score = 0
     
-    emotional_words = ["miss", "love", "feel", "want"]
+    emotional_words = ["miss", "love", "feel", "want", "need", "think"]
     
     for w in words:
         if w in emotional_words:
