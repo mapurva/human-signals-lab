@@ -8,7 +8,9 @@ def closeness_score(message):
         if w in emotional_words:
             score += 2
     
-    score += len(words) * 1
+
+    score += len(words) * 1.5
+
     
     return score
 
