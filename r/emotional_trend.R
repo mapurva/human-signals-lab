@@ -22,3 +22,5 @@ print(data.frame(messages, scores))
 
 plot(scores, type="o", main="Emotional Trend",
      xlab="Message Index", ylab="Score")
+
+write.csv(data.frame(messages, scores), "results/trend_output.csv")
