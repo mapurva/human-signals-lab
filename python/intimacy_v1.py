@@ -6,7 +6,7 @@ def closeness_score(message):
     
     for w in words:
         if w in emotional_words:
-            score += 2
+            score += 3
     
     score += len(words) * 0.5
     return score
